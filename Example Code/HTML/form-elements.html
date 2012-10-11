@@ -1,11 +1,13 @@
 <!--
 | Form Structure
 | ==============
-| All forms should make use of this html structure, regardless of size.
 | The basic structure is similar for all input types:
 | - Each form element is wrapped in a form row.
 | - The <label> element contains a <span> for label text, an <input>, optional inline error message and required field indicator.
 | - Beneath the label is an area for optional supplemental description text. It may contain <p>, <ul> or <ol> elements.
+|
+| All forms should make use of this html structure, regardless of size. If used in a place where the label doesn't
+| need to appear (such as a simple search form), still include it for accessibility but hide it or move it off-screen.
 -->
 
 <form action="#" method="post" enctype="multipart/form-data">
