@@ -1,0 +1,247 @@
+<!--
+| Form Structure
+| ==============
+| All forms should make use of this html structure, regardless of size.
+| The basic structure is similar for all input types:
+| - Each form element is wrapped in a form row.
+| - The <label> element contains a <span> for label text, an <input>, optional inline error message and required field indicator.
+| - Beneath the label is an area for optional supplemental description text. It may contain <p>, <ul> or <ol> elements.
+-->
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+
+  <!--
+  | Validation Error Summary
+  | ========================
+  | All forms should display some variation of the error summary box at the top of the form when errors occur.
+  | If inline error messages are being used, this summary may only consist of a basic message.
+  | If this is the only error text in the form, list each error message in a <ul>
+  -->
+
+  <div class="form-copy form-error">
+    <strong>Oops! Something isn't right.</strong>
+    <p>Please check the form and try again.</p>
+    <ul>
+      <li>The 'Text Input' field is required. Please supply a value.</li>
+      <li>Please ensure your email address is written in the correct format.</li>
+      <li>Please select a date.</li>
+    </ul>
+  </div>
+
+
+  <!--
+  | Fieldsets
+  | =========
+  | Use fieldsets to visually and semantically separate elements into logical groups.
+  | This can break up long forms into smaller, more manageable chunks.
+  -->
+
+  <fieldset>
+
+
+    <!--
+    | Text Input
+    | ==========
+    | These are the most basic form fields. Be sure to choose an appropriate type attribute
+    | for this element to ensure a useful keyboard layout is shown on compatible devices.
+    | Current choices are text, url, email, search and tel.
+    | This input is also used for password fields.
+    |
+    | This example also shows how to add a required field indicator to the label text.
+    -->
+
+    <div class="form-row">
+      <label>
+        <span class="form-label-text">Text Input <abbr title="This field is required">*</abbr></span>
+        <input type="text" name="name" placeholder="Placeholder Text" class="form-field">
+        <span class="form-row-description form-row-error-text">This field is required</span>
+      </label>
+      <div class="form-row-description form-copy">
+        <p>A description of what is required.</p>
+      </div>
+    </div>
+
+
+    <!--
+    | Textarea
+    | ========
+    -->
+
+    <div class="form-row">
+      <label>
+        <span class="form-label-text">Textarea</span>
+        <textarea name="name" class="form-field">Default text</textarea>
+        <span class="form-row-description form-row-error-text">This field is required</span>
+      </label>
+      <div class="form-row-description form-copy">
+        <p>A more detailed description of what is required</p>
+        <ul>
+          <li>Detailed instruction 1</li>
+          <li>Detailed instruction 2</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!--
+    | Select Dropdown
+    | ===============
+    | If an <option> element's value attribute matches its text, the value attribute can be omitted.
+    -->
+
+    <div class="form-row">
+      <label>
+        <span class="form-label-text">Default Select</span>
+        <select name="name" class="form-field">
+          <option value="">Choose An Option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+          <option value="6">Option 6</option>
+          <option value="7">Option 7</option>
+          <option value="8">Option 8</option>
+          <option value="9">Option 9</option>
+          <option value="10">Option 10</option>
+        </select>
+        <span class="form-row-description form-row-error-text">This field is required</span>
+      </label>
+    </div>
+
+
+    <!--
+    | Single Checkbox
+    | ===============
+    -->
+
+    <div class="form-row form-row-checkbox">
+      <label>
+        <span class="form-label-text">Single Checkbox</span>
+        <input type="checkbox" name="name" class="form-field">
+        <span class="form-row-description form-row-error-text">This field is required</span>
+      </label>
+    </div>
+
+
+    <!--
+    | Grouped Checkboxes
+    | ==================
+    | To create a group of checkboxes, we use a <span> for the question, with each answer listed in an <li>.
+    -->
+
+    <div class="form-row form-row-field-group">
+      <span class="form-label-text">Grouped Checkboxes</span>
+      <ul class="form-field">
+        <li>
+          <label>
+            <input type="checkbox" name="name" checked="checked">
+            <span>Option 1</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="name">
+            <span>Option 2</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="name">
+            <span>Option 3</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="name">
+            <span>Option 4</span>
+          </label>
+        </li>
+      </ul>
+      <span class="form-row-description form-row-error-text">This field is required</span>
+    </div>
+
+
+    <!--
+    | Grouped Radio Buttons
+    | =====================
+    | To create a group of radio buttons, we use a <span> for the question, with each answer listed in an <li>.
+    | Radio buttons from the same question must share the same 'name' attribute.
+    -->
+
+    <div class="form-row form-row-field-group">
+      <span class="form-label-text">Radio Buttons</span>
+      <ul class="form-field">
+        <li>
+          <label>
+            <input type="radio" name="name" checked="checked">
+            <span>Option 1</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="name">
+            <span>Option 2</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="name">
+            <span>Option 3</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="name">
+            <span>Option 4</span>
+          </label>
+        </li>
+      </ul>
+      <span class="form-row-description form-row-error-text">This field is required</span>
+    </div>
+
+
+    <!--
+    | Datepicker
+    | ==========
+    | When necessary, we use the jQuery UI datepicker element. This is a standard text field,
+    | with the addition of a wrapping <div class="datepicker"> element. This can be used to supply
+    | a pseudo element calendar icon over the input itself.
+    -->
+
+    <div class="form-row">
+      <label>
+        <span class="form-label-text">Date Input</span>
+        <span class="datepicker">
+          <input type="text" name="name" class="form-field">
+        </span>
+        <span class="form-row-description form-row-error-text">This field is required</span>
+      </label>
+    </div>
+
+  </fieldset>
+
+  <!--
+  | Hidden Inputs
+  | =============
+  | Hidden form inputs do not need to be wrapped in any containing HTML as they are not visible on page
+  | and do not need to be styled.
+  -->
+
+  <input type="hidden" name="name" value="" />
+
+
+  <!--
+  | Form Actions
+  | ============
+  | At the end of each form should be a form actions row.
+  | This will contain any submit or reset buttons for the form.
+  -->
+
+  <div class="form-row form-row-actions">
+    <input type="submit" value="Submit" class="button">
+    <input type="reset" value="Clear" class="button button-alt">
+  </div>
+
+</form>
