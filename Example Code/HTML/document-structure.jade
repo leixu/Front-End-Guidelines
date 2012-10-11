@@ -1,0 +1,181 @@
+!!! 5
+html(lang='en')
+  head
+
+    // Always force latest IE rendering engine & Chrome Frame
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+
+
+    //
+    // Page Titles
+    // ===========
+    // The homepage title should contain the site name and a short strapline / description.
+    // Internal pages should include a separated reverse breadcrumb style title.
+    // e.g. Page Title / Sub-Section / Section / Site Name
+    //
+
+    title Clock – Award-winning UK web design and on-line marketing.
+
+
+    //
+    // Standard Meta Tags
+    // =========
+    // Description: An overview of the current page content, viewable is search engine listings. Recommended length - 150 characters.
+    // Keywords: Included for niche search engines, as most major ones favour good page content instead. Up to 10 relevant keywords.
+    // Author: Should include a name and web address of the website author
+    // Copyright:
+    //
+
+    meta(charset='utf-8')
+    meta(name='description' content='Clock is a digital agency. We build experiences that people love.')
+    meta(name='keywords' content='Clock, Web Design, London, UK')
+    meta(name='author' content='Clock - http://clock.co.uk')
+
+
+    //
+    // JavaScript - Head Specific
+    // ==========================
+    // Scripts should only live in the head in specific circumstances,
+    // for example if they need to execute before CSS rendering or page load.
+    //
+
+    // Modernizr should only be used when needed. Be sure to only include the modules you are testing for
+    script(src='resource/js/modernizr-2.6.1.min.js')
+
+    // If Modernizr isn't needed, but HTML5 is, create HTML5 element support for IE
+    script
+      var html5Elements = ['article', 'aside', 'footer', 'header', 'hgroup', 'nav', 'section', 'time']
+      for (var i = 0; i < html5Elements.length; i++) {
+        document.createElement(html5Elements[i])
+      }
+
+
+    //
+    // CSS
+    // ===
+    // CSS files should be combined and compressed for production.
+    // Additional stylesheets may be loaded on a per page basis if needed.
+    // Only include IE stylesheets when absolutely necessary.
+    // When including external CSS files (from plugins etc), consider minifying or adding to the main stylesheet.
+    //
+
+    link(rel='stylesheet', href='/resource/css/style.css')
+    link(rel='stylesheet', href='/resource/css/gallery.css')
+
+    //if lt IE 8
+      link(rel='stylesheet', href='/resource/css/internet-explorer.css')
+
+    // Internal CSS files, authored by third-parties
+    link(rel='stylesheet', href='/css/fancybox.css')
+
+    // External CSS files, such as webfonts
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400')
+
+
+    //
+    // Icons / Images
+    // ==============
+    // Favicons should use 16px and 32px retina versions – http://davidwalsh.name/retina-favicons
+    // Apple specific icons and startup images should be used where applicable. If a project is likely to be used
+    // as a home page web-app, then consider using all the below variations. Simple websites can make do with just
+    // using the popular touch icons without the startup images. – https://gist.github.com/2222823
+    //
+
+    // A favicon.ico file, containing both 16px and 32px variations
+    link(rel='shortcut icon', href='/resource/images/favicon.ico')
+
+    // iPhone
+    link(rel='apple-touch-icon-precomposed', href='apple-touch-icon-precomposed-57x57.png', sizes='57x57')
+    link(rel='apple-touch-startup-image',    href='apple-touch-startup-image-320x460.png', media='(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)')
+    // iPhone (Retina)
+    link(rel='apple-touch-icon-precomposed', href='apple-touch-icon-precomposed-114x114.png', sizes='114x114')
+    link(rel='apple-touch-startup-image',    href='apple-touch-startup-image-640x920.png', media='(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)')
+    // iPhone 5
+    link(rel='apple-touch-startup-image',    href='apple-touch-startup-image-640x1096.png', media='(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)')
+    // iPad
+    link(rel='apple-touch-icon-precomposed', href='apple-touch-icon-precomposed-72x72.png', sizes='72x72')
+    link(rel='apple-touch-startup-image',    href='apple-touch-startup-image-768x1004.png', media='(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)')
+    link(rel='apple-touch-startup-image',    href='apple-touch-startup-image-748x1024.png', media='(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)')
+    // iPad (Retina)
+    link(rel='apple-touch-icon-precomposed', href='apple-touch-icon-precomposed-144x144.png', sizes='144x144')
+    link(rel='apple-touch-startup-image',    href='apple-touch-startup-image-1536x2008.png', media='(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)')
+    link(rel='apple-touch-startup-image',    href='apple-touch-startup-image-1496x2048.png', media='(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)')
+
+
+    //
+    // Apple Specific Meta Tags
+    // ========================
+    //
+
+    // Viewport meta information
+    meta(name='viewport', content='initial-scale=1.0')
+
+    // Apple specific: Enable web-app capabilities
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+
+    // Apple specific: This adds a 12 character title which will appear on the home screen – iOS6+
+    meta(name='apple-mobile-web-app-title', content='My App')
+
+
+    //
+    // Extras
+    // ======
+    // Any extras live here. These could include:
+    // - RSS Feeds
+    // - robots.txt / humans.txt
+    // - Facebook Open Graph meta tags
+    // - Google Webmaster tools vericication code
+    //
+
+    // RSS
+    link(rel='alternate', type='application/rss+xml', title='Clock - Blog RSS Feed' href='/feed/index.xml')
+
+    // Google Webmaster Tools verification code
+    meta(name='google-site-verification', content='XXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+
+  body
+
+    //
+    // Page Content
+    //
+
+
+    //
+    // JavaScript
+    // ==========
+    // Use CDN versions of popular framworks / scripts where possible, with a local fallback for safety.
+    // Loading jQuery UI from a CDN will include all modules. If only a small portion is needed, just use
+    // an optimised local version.
+    //
+
+    // jQuery via Google CDN, with local fallback
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script
+      if (typeof jQuery === 'undefined') {
+        document.write('<script src="/js/jquery-1.8.2.min.js" />')
+      }
+
+    // jQuery UI via Google CDN, with local fallback -->
+    script(src='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js')
+    script
+      if (typeof jQuery.ui === 'undefined') {
+        document.write('<script src="/js/jquery-ui-1.8.23.min.js" />');
+      }
+
+    // JavaScript plugins
+    script(src='/js/fancybox.js')
+
+    // Project specific files
+    script(src='/js/script.js')
+
+    // Analytics / Tracking Code
+    script
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
