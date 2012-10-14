@@ -41,12 +41,14 @@
 | We now ofter use the <i> element for other reasons, such as housing icons.
 -->
 
+We apply science, technology and our <em>unparalleled</em> global network of resources to the pursuit of <strong>Building Better Worlds</strong>.
+
+<!-- Use the small element to de-emphasise text. It is also commonly used for small print / legal notices -->
 <small>2073 Weyland Industries. All rights reserved.</small>
 
 
 <!--
-| =====
-| This section is a work in progress
+| Abbreviations
 | =============
 -->
 
@@ -65,7 +67,6 @@ Any attempt to arrest a senior officer of <abbr title="Omni Consumer Products">O
 
 <!-- Simple solution -->
 <address>
-  1 Infinite Loop<br>
   221b Baker St<br>
   Marylebone<br>
   London<br>
@@ -74,11 +75,12 @@ Any attempt to arrest a senior officer of <abbr title="Omni Consumer Products">O
 
 <!-- Using the hCard microformat -->
 <div class="vcard">
-  <p class="fn"><a class="url" href="http://website.com">Firstname Lastname</a><p>
 
+  <!-- Full Name -->
+  <p class="fn">Egon Spengler<p>
 
+  <!-- Address -->
   <p class="adr">
-    <span class="organization-name">Apple</span>
     <span class="organization-name">Ghostbusters</span><br>
     <span class="street-address">14 North Moore St.</span><br>
     <span class="extended-address">Manhattan</span><br>
@@ -93,3 +95,67 @@ Any attempt to arrest a senior officer of <abbr title="Omni Consumer Products">O
 
 </div>
 
+
+<!--
+| Blockquotes
+| ===========
+| Semantic citation markup is an ambiguous issue with no agreed correct implementation. The <cite> tag itself is
+| only to be used for the title of a work, such as a book, paper, song, movie etc. It should not contain a persons name.
+|
+| This means we need something to wrap additional details, such as a name or date.
+| HTML5 Doctor recommend using an invalid footer element within the blockquote:
+| - http://html5doctor.com/blockquote-q-cite/#change-2011-07-11
+| The official WHATWG recommendation is to put the blockquote in a figure and add attribution in <figcaption>:
+| - http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2012-February/034822.html
+|
+| For now, we should use the Twitter Bootstrap method of using a <small> element.
+-->
+
+<blockquote>
+  <p>Be excellent to each other.</p>
+  <small>Bill S. Preston, Esq. <cite> Bill & Ted's Excellent Adventure</cite></small>
+</blockquote>
+
+
+<!--
+| Lists
+| =====
+| This section is a work in progress
+-->
+
+<!-- Unordered lists contain items with no particular order -->
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<!-- Ordered lists contain items which need to be in a set order -->
+<ol>
+  <li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
+  <li>A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.</li>
+  <li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Laws.</li>
+</ol>
+
+<!-- Definition lists contain items which have a title and a description -->
+<dl>
+
+  <dt></dt>
+  <dd></dd>
+
+  <dt></dt>
+  <dd></dd>
+
+  <dt></dt>
+  <dd></dd>
+
+</dl>
+
+
+<!--
+| Links
+| =====
+| This section is a work in progress
+-->
+
+<a href="/index-1.html">internal link</a>
