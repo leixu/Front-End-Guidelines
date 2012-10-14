@@ -27,7 +27,7 @@
 | There is very little reason to ever use <br> tags in HTML (outside of <address> elements).
 -->
 
-<p>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci..</p>
+<p>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci.</p>
 <p>In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi.</p>
 
 
@@ -41,15 +41,16 @@
 | We now ofter use the <i> element for other reasons, such as housing icons.
 -->
 
-Nullam in <em>emphasised text</em>. Vivamus hendrerit arcu <strong>strong text</strong> sed erat.
+<small>2073 Weyland Industries. All rights reserved.</small>
 
 
 <!--
-| Links
 | =====
 | This section is a work in progress
+| =============
 -->
-<a href="/index-1.html">internal link</a>
+
+Any attempt to arrest a senior officer of <abbr title="Omni Consumer Products">OCP</abbr> results in shutdown.
 
 
 <!--
@@ -58,27 +59,37 @@ Nullam in <em>emphasised text</em>. Vivamus hendrerit arcu <strong>strong text</
 | The first example shows a simple way to write a postal address.
 |
 | An alternate, more semantic method would include using microformats as in the second example,
-| This makes use of the hCard microformat - http://html5doctor.com/microformats/#hcard
+| This makes use of the hCard microformat - http://microformats.org/wiki/hcard
+| The hCard microformat also allows for other types of information, such as website or phone number.
 -->
 
 <!-- Simple solution -->
 <address>
-  Firstname Lastname<br>
-  Apple<br>
   1 Infinite Loop<br>
-  Cupertino, CA 95014<br>
-  USA
+  221b Baker St<br>
+  Marylebone<br>
+  London<br>
+  NW1 6XE
 </address>
 
 <!-- Using the hCard microformat -->
 <div class="vcard">
   <p class="fn"><a class="url" href="http://website.com">Firstname Lastname</a><p>
+
+
   <p class="adr">
     <span class="organization-name">Apple</span>
-    <span class="street-address">1 Infinite Loop</span><br>
-    <span class="region">Cupertino</span><br>
-    <span class="postal-code">CA 95014</span><br>
+    <span class="organization-name">Ghostbusters</span><br>
+    <span class="street-address">14 North Moore St.</span><br>
+    <span class="extended-address">Manhattan</span><br>
+    <span class="locality">New York City</span><br>
+    <span class="region">New York</span><br>
+    <span class="postal-code">10013</span><br>
     <span class="country-name">USA</span>
   </p>
-  <p class="tel">408.996.1010</p>
+
+  <!-- Phone Number -->
+  <p class="tel">555-2368</p>
+
 </div>
+
