@@ -3,16 +3,30 @@
 | ==========
 -->
 
+<!-- Pagination wrapper -->
 <div class="pagination">
 
   <!-- If used with search results, include a summary to give indication of the total amount of results -->
   <p class="pagination-summary">Showing <strong>1</strong> to <strong>10</strong> of <strong>60</strong> results.</p>
 
+
   <!--
-  | Pagination List
-  | ===============
-  | The pagination list contains links to all paginated results (up to 5 pages at once).
-  | When applicable, the First, Previous, Next, and Last links should be swapped for <span> elements.
+  | Basic Pagination
+  | ================
+  | Just next and previous links
+  -->
+
+  <ul class="pagination-list">
+    <li class="previous"><a href="#" title="Go to the previous page">Previous</a></li>
+    <li class="next"><a href="#" title="Go to the next page">Next</a></li>
+  </ul>
+
+
+  <!--
+  | Full Pagination List
+  | ====================
+  | The full pagination list contains numbered links (up to 5 pages at once)
+  | as well as first, previous, next and last links.
   |
   | Note the class of 'pagination-current-page' on the Page 3 link.
   -->
@@ -33,36 +47,26 @@
 
   </ul>
 
+
+  <!--
+  | Disabled Elements
+  | =================
+  | When applicable, a disabled elements should be repaced with a span element,
+  | with a class of 'disabled' on the wrapping <li>.
+  -->
+
+  <ul class="pagination-list">
+
+    <li class="first disabled"><span>First</span></li>
+    <li class="previous disabled"><span>Previous</span></li>
+
+    <li class="disabled"><span>1</span></li>
+
+    <li class="next disabled"><span>Next</span></li>
+    <li class="last disabled"><span>Last</span></li>
+
+  </ul>
+
 </div>
 
 
-<!--
-| Disabled Elements
-| =================
-| When applicable, a disabled elements should be repaced with a span element,
-| with a class of 'disabled' on the wrapping <li>.
--->
-
-<ul class="pagination-list">
-
-  <li class="first disabled"><span>First</span></li>
-  <li class="previous disabled"><span>Previous</span></li>
-
-  <li class="disabled"><span>1</span></li>
-
-  <li class="next disabled"><span>Next</span></li>
-  <li class="last disabled"><span>Last</span></li>
-
-</ul>
-
-
-<!--
-| Basic Pagination
-| ================
-| To just supply next and previous links, we can move the .pagination class directly to the <ul>
--->
-
-<ul class="pagination">
-  <li class="previous"><a href="#" title="Go to the previous page">Previous</a></li>
-  <li class="next"><a href="#" title="Go to the next page">Next</a></li>
-</ul>
