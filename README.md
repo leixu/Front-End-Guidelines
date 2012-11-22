@@ -4,6 +4,8 @@ This repo will eventually contain guideline documents and coding examples / temp
 
 We can use these to standardise our code to increase quality and consistency.
 
+For now access is pull only, as any changes will be reviewed at Front-End code review meetings. Please feel free to fork and submit pull-requests.
+
 ### Temporary Documentation
 
 A coding guideline QA Document is currently being written in Google Docs. Once it is more finalised, it will be added to this repo in a way that anyone can contribute.
