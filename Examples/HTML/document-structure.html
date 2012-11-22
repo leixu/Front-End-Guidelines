@@ -12,7 +12,7 @@
     <!--
     | Page Titles
     | ===========
-    | The homepage title should contain the site name and a short strapline / description.
+    | The homepage title should contain the site name and a short description.
     | Internal pages should include a separated reverse breadcrumb style title.
     | e.g. Page Title / Sub-Section / Section / Site Name
     -->
@@ -23,8 +23,10 @@
     <!--
     | Standard Meta Tags
     | =========
-    | Description: An overview of the current page content, viewable is search engine listings. Recommended length - 150 characters.
-    | Keywords: Included for niche search engines, as most major ones favour good page content instead. Up to 10 relevant keywords.
+    | Description: An overview of the current page content, viewable is search
+    | engine listings. Recommended length - 150 characters.
+    | Keywords: Included for niche search engines, as most major ones favour
+    | good page content instead. Up to 10 relevant keywords.
     | Author: Should include a name and web address of the website author
     -->
 
@@ -40,7 +42,7 @@
     | for example if they need to execute before CSS rendering or page load.
     -->
 
-    <!-- Modernizr should only be used when needed. Be sure to only include the modules you are testing for -->
+    <!-- If using Modernizr, be sure to only include modules you are testing for -->
     <script src="resource/js/modernizr-2.6.1.min.js"></script>
 
     <!-- If Modernizr isn't needed, but HTML5 is, create HTML5 element support for IE -->
@@ -58,7 +60,8 @@
     | CSS files should be combined and compressed for production.
     | Additional stylesheets may be loaded on a per page basis if needed.
     | Only include IE stylesheets when absolutely necessary.
-    | When including external CSS files (from plugins etc), consider minifying or adding to the main stylesheet.
+    | When including external CSS files (from plugins etc), consider minifying
+    | or adding to the main stylesheet.
     -->
 
     <link rel="stylesheet" href="/resource/css/style.css" />
@@ -79,8 +82,9 @@
     | Icons / Images
     | ==============
     | Favicons should use 16px and 32px retina versions – http://davidwalsh.name/retina-favicons
-    | Apple specific icons and startup images should be used where applicable. If a project is likely to be used
-    | as a home page web-app, then consider using all the below variations. Simple websites can make do with just
+    | Apple specific icons and startup images should be used where applicable.
+    | If a project is likely to be used as a home page web-app, then consider
+    | using all the below variations. Simple websites can make do with just
     | using the popular touch icons without the startup images. – https://gist.github.com/2222823
     | Unfortunately, the -webkit- prefix on these media attributes will fail validation.
     -->
@@ -114,12 +118,26 @@
     <!-- Viewport meta information -->
     <meta name="viewport" content="initial-scale=1.0" />
 
-    <!-- Apple specific: Enable web-app capabilities -->
+    <!-- Enable web-app capabilities -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <!-- Apple specific: This adds a 12 character title which will appear on the home screen – iOS6+ -->
+    <!-- Add a 12 character title which will appear on the home screen – iOS6+ -->
     <meta name="apple-mobile-web-app-title" content="My App" />
+
+
+    <!--
+    | Microsoft Specific Meta Tags
+    | ============================
+    | The following meta tags style the Windows 8 'pinned tile'
+    -->
+
+    <!-- Add a 20 character title which will appear on the tile -->
+    <meta name="application-name" content="My App"/>
+
+    <!-- Add an icon and set the tile background colour -->
+    <meta name="msapplication-TileImage" content="microsoft-pinned-tile-image-144x144.png"/>
+    <meta name="msapplication-TileColor" content="#349aa8"/>
 
 
     <!--
@@ -146,9 +164,11 @@
     <!--
     | JavaScript
     | ==========
-    | Use CDN versions of popular framworks / scripts where possible, with a local fallback for safety.
-    | Loading jQuery UI from a CDN will include all modules. If only a small portion is needed, just use
-    | an optimised local version.
+    | Use CDN versions of popular framworks / scripts where possible, with a
+    | local fallback for safety.
+    |
+    | Loading jQuery UI from a CDN will include all modules. If only a small
+    | portion is needed, just use an optimised local version.
     -->
 
     <!-- jQuery via Google CDN, with local fallback -->
