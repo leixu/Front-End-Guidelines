@@ -113,7 +113,7 @@ We are also saying that the `.main-navigation` class can only ever be applied to
 
 We know that every `<a>` within our `.main-navigation` (which is a list) will be located inside an `<li>` – it would be invalid if it weren't. This means we don't need to specify `li a` in our selector, we can simply use `a`.
 
-Think about ways you can reduce the number 
+Think about ways you can reduce the number of elements in your selectors to increase performance and decrease file size.
 
 **Good:**
 
@@ -130,7 +130,7 @@ CSS files should have a title at the top, describing the file's purpose.
 
 Each section of the file should be grouped according to content and relevance, and titles should be used to clearly identify what a group of styles is for. Within these, sub-headers can be used to identify certain related content styles.
 
-[This section needs example of CSS comments]
+[This section needs examples of CSS comments]
 
 
 ## Accessibility
