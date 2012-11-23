@@ -16,7 +16,7 @@ Writing semantic HTML is important. We should always write our optimal HTML befo
 
 ##Structure
 
-* Keep use of `<div>` and `<span>` tags to a minimum. If you can't explain why you need it, get rid of it.
+* Keep use of nested `<div>` and `<span>` tags to a minimum. If you can't explain why you need it, get rid of it.
 * Add an HTML comment to the closing tag of major elements. This will aid navigation of your source and will highlight nesting / indentation errors.
 
 
