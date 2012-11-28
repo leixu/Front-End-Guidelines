@@ -94,7 +94,7 @@ JavaScript files should be minified and potentially concatenated. If an external
 
 ### CSS
 
-CSS files should be combined and minified. Consider whether 1 large file, or a few smaller files is appropriate for the project.
+CSS files should be minified and where possible combined to output as a single file. There are one or two exceptions, however. For example, if most styles are shared across a whole project, but a gallery page has a lot of bespoke CSS, consider keeping the gallery CSS separate and only including the file on the gallery page itself.
 
 
 ### Images
