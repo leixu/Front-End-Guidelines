@@ -57,8 +57,6 @@ We add favicons and simple mobile-friendly information in the head too.
 
 Any Facebook metadata resides within the head, but they invalidate the document so we only use these where necessary.
 
-[Example HTML document head](https://github.com/clocklimited/Front-End-Guidelines/blob/master/Example%20Code/HTML/document-structure.html)
-
 
 ## HTML5
 
