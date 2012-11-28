@@ -3,7 +3,8 @@
 ## Overview
 
 This document outlines core processes we have in place, to ensure our work is to the highest possible standard. It should also help create a default state for our code, to make it seamless when passing work between members of the production staff.
-Browser Support
+
+## Browser Support
 
 Unless client requirements stipulate otherwise, our full list of browser support is the current version and 1 version previous of:
 
