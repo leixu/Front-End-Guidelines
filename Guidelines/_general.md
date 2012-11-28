@@ -54,6 +54,6 @@ Another way to increase page speed is to optimise images. We should always use i
 
 ## Useful Links
 
-Mozilla Developer Network for [CSS](https://developer.mozilla.org/en/CSS) / [HTML](https://developer.mozilla.org/en/HTML).
-Official jQuery documentation - [docs.jquery.com](docs.jquery.com).
-Dochub - useful collection of [HTML](http://dochub.io/#html/), [CSS](http://dochub.io/#css/), [JavaScript](http://dochub.io/#javascript/), [jQuery](http://dochub.io/#jquery/) documentation (aggregated from other sources).
+* Mozilla Developer Network for [CSS](https://developer.mozilla.org/en/CSS) / [HTML](https://developer.mozilla.org/en/HTML).
+* Official jQuery documentation - [docs.jquery.com](docs.jquery.com).
+* Dochub - useful collection of [HTML](http://dochub.io/#html/), [CSS](http://dochub.io/#css/), [JavaScript](http://dochub.io/#javascript/), [jQuery](http://dochub.io/#jquery/) documentation (aggregated from other sources).
