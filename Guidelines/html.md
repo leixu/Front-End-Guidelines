@@ -31,7 +31,7 @@ Writing semantic HTML is important. We should always write our optimal HTML befo
 ## Lists
 
 * Use `<ul>`, `<ol>` and `<dl>` elements for information in list form – think carefully about which is most appropriate.
-* Lists should 
+* Ordered and unordered lists should only ever contain `<li>` elements as direct children.
 
 
 ##Tables
