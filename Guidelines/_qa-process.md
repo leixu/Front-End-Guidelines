@@ -14,8 +14,7 @@ The [W3C CSS Validation](http://jigsaw.w3.org/css-validator/) service should be 
 
 ### Validate JavaScript
 
-All JavaScript should be free of console errors and console logs. It should also be checked with [JSHint](http://www.jshint.com/) to conform to set best practices. Ensure all JS conforms to our [JavaScript Style Guide](https://github.com/bengourley/js-style-guide).
-
+All JavaScript should be free of console errors and console logs. Ensure all JS conforms to our [JavaScript Style Guide](https://github.com/bengourley/js-style-guide). The style guide repo contains a [JSHint](http://www.jshint.com/) config file that should be used to configure your editor for syntax and style checking. For new projects, fetch the latest version of the config file and place it at `.jshintrc` in the project root. When working on legacy projects, favour consistency with the existing style (there should be a suitable `.jshintrc` in the project's root, if not create one).
 
 ## Testing
 
