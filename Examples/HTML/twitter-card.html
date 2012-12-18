@@ -1,0 +1,70 @@
+<!--
+| Twitter Card
+| ============
+| Twitter cards make it possible for you to attach media to Tweets that link
+| to your content. These can contain text, images or video. Add these tags to
+| your document head. Where specified, OpenGraph tags may be used in place of
+| the Twitter meta tags.
+|
+| Once implemented, new sites need to be submitted for review by Twitter.
+|
+| For more info: https://dev.twitter.com/docs/cards
+| To preview these tags using your content: https://dev.twitter.com/docs/cards/preview
+| To submit your site for review: https://dev.twitter.com/form/participate-twitter-cards
+-->
+
+
+<!--
+| Standard Tags
+| =============
+-->
+
+<!-- Sets the content type. Can be "summary", "photo", or "player" -->
+<meta name="twitter:card" content="summary">
+
+<!-- @username of website -->
+<meta name="twitter:site" content="@clock">
+<!-- Use as an alternative to `twitter:site` if username is likely to change -->
+<meta name="twitter:site:id" content="24866880">
+
+<!-- @username of content creator -->
+<meta name="twitter:creator" content="@jackbrewer">
+<!-- Use as an alternative to `twitter:creator:id` if username is likely to change -->
+<meta name="twitter:creator" content="25816158">
+
+<!-- The title of the content to share (max 70 characters) – og:title -->
+<meta name="twitter:title" content="Front End Guidelines">
+
+<!-- The URL of the content to share – og:url -->
+<meta name="twitter:url" content="https://github.com/clocklimited/Front-End-Guidelines">
+
+<!-- A description of the content (max 200 characters) – og:description -->
+<meta name="twitter:description" content="Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.">
+
+<!-- URL of an image to use in the card (use site logo if none available) – og:image -->
+<meta name="twitter:image" content="http://github.com/clocklimited/Front-End-Guidelines/image.png">
+
+<!-- Supply dimensios for the image – og:image:width, og:image:height -->
+<meta name="twitter:image:width" content="400">
+<meta name="twitter:image:height" content="300">
+
+
+<!--
+| Video Specific Tags
+| ===================
+| These additional tags may be used to embed video within the Twitter card.
+| Use the previous `image` tags to supply a placeholder image for the video.
+-->
+
+<!-- HTTPS URL of player iframe -->
+<meta name="twitter:player" content="https://clock.co.uk/embed/video/">
+
+<!-- Supply dimensios for the video -->
+<meta name="twitter:player:width" content="435">
+<meta name="twitter:player:height" content="251">
+
+<!-- URL to a raw video or audio stream -->
+<meta name="twitter:player:stream" content="https://clock.co.uk/embed/video/raw.mp4">
+
+<!-- The MIME type/subtype combination that describes the `twitter:player:stream` content -->
+<meta name="twitter:player:stream:content_type" content="video/mp4; codecs="avc1.42E01E1, mpa.40.2"">
